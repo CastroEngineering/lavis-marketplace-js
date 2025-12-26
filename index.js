@@ -1,4 +1,4 @@
-const express = required ('express');
+const express = require('express');
 const app = express();
 const PORT = 3000;
 
@@ -13,6 +13,6 @@ res.send('<h1> Jewlery for those who write their own story</h>');
 app.listen(PORT, () =>
 {
 
-console.log('server is running ar http://localhost:${PORT}');
+console.log('server is running at http://localhost:${PORT}');
 
 });
