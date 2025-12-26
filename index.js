@@ -5,7 +5,7 @@ const PORT = 3000;
 app.get('/', (req, res) =>
 {
 
-res.send('<h1> Jewlery for those who write their own story</h;
+res.send('<h1> Jewlery for those who write their own story</h>');
 
 });
 
