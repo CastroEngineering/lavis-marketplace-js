@@ -8,12 +8,12 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 
-/* app.get('/', (req, res) =>
+app.get('/', (req, res) =>
 {
-    // res.sendFile(path.resolve('public/index.html')); use this for static pages
+    res.sendFile(path.resolve('public/index.html')); //use this for static pages
     // res.render('index'); use this for EJS in the future
 
-}); */
+});
 
 
 /* app.listen(PORT, () =>
