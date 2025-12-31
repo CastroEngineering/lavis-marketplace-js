@@ -2,13 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-app.get('/', (req, res) =>
-{
 
-res.send('<h1> Jewlery for those who write their own story</h>');
-
-});
-
+app.use(express.static('public'));
+app.set('views engine', 'ejs');
 
 app.listen(PORT, () =>
 {
