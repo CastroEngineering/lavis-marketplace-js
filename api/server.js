@@ -4,11 +4,24 @@ const PORT = 3000;
 
 
 app.use(express.static('public'));
-app.set('views engine', 'ejs');
+app.set('view engine', 'ejs');
 
-app.listen(PORT, () =>
+
+app.get('/', (red, res) => 
 {
 
-console.log('server is running at http://localhost:${PORT}');
+res.render('index');
 
 });
+
+
+/* app.listen(PORT, () =>
+{
+
+console.log(`server is running at http://localhost:${PORT}`);
+
+});
+
+*/
+
+module.exports = app;
